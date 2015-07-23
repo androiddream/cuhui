@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('com.umeng.message.lib_v2.0.0.jar'))

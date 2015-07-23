@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.example.blank.cuhui"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/com.umeng.message.lib_v2.0.0.jar')
+    compile files('libs/butterknife-6.1.0.jar')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'br.com.liveo:navigationdrawer-material:1.0.3'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile files('libs/ksoap2-android-assembly-3.0.0-jar-with-dependencies.jar')
+}

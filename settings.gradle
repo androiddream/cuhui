@@ -1,0 +1,1 @@
+include ':app', ':library', ':android-support-v4', ':com.umeng.message.lib_v2.0.0', ':gson-2.2.4', ':butterknife-6.1.0', ':Prelibrary'
